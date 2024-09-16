@@ -14,7 +14,7 @@ function Search(props) {
   function handleFormSubmit(e) {
     e.preventDefault();
     
-    axios.get(`http://localhost:3000/user/${inputValue}`)
+    axios.get(`https://girman-backend.onrender.com/user/${inputValue}`)
       .then(function (response) {
         const users = response.data.users;
         setUsers(users);
